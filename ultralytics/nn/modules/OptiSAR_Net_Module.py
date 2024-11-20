@@ -6,7 +6,7 @@ import torch.nn.functional as F
 from einops import rearrange
 from torch import Tensor
 from torch.nn.parameter import Parameter
-from conv import Conv, autopad
+from .conv import Conv, autopad
 
 __all__ = (
     "DAAM",
