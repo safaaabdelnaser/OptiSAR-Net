@@ -62,7 +62,7 @@ Use conda to create the conda environment and activate it:
 ```shell
 conda env create --name your_env_name python=3.8
 conda activate your_env_name
-pip install -r requirements.txt
+pip install ultralytics
 ```
 ### 📈Training
 Check the path in [train.py](./train.py), and run it to train:
