@@ -1,0 +1,21 @@
+names:
+  - Bulk Carrier
+  - Container Ship
+  - Craft
+  - Fish Carrier
+  - General Cargo
+  - Ore Carrier
+  - Passenger
+  - Platform
+  - Tanker
+  - Trawler
+nc: 10
+roboflow:
+  license: CC BY 4.0
+  project: fusar_last
+  url: https://universe.roboflow.com/lastversionfusar/fusar_last/dataset/3
+  version: 3
+  workspace: lastversionfusar
+test: /kaggle/working/FUSAR_LAST-3/test/images
+train: /kaggle/working/FUSAR_LAST-3/train/images
+val: /kaggle/working/FUSAR_LAST-3/valid/images
