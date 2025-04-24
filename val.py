@@ -1,5 +1,5 @@
 from ultralytics import YOLO
 
-model = YOLO('OptiSAR-Net.pt')
+model = YOLO('/kaggle/working/OptiSAR-Net/runs/detect/train/weights/best.pt')
 
-model.val(data='CDHD.yaml', batch=1)
+model.val(data='lastYaml.yaml', batch=1)
