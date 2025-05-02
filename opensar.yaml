@@ -1,0 +1,24 @@
+train: /kaggle/working/open-4/train/images
+val: /kaggle/working/open-4/valid/images
+test: /kaggle/working/open-4/test/images
+
+nc: 9
+names:
+  [
+    "Bulk Carrier",
+    "Cargo",
+    "Container Ship",
+    "Fishing",
+    "General Cargo",
+    "Oil Products Tanker",
+    "Oil-Chemical Tanker",
+    "Other",
+    "Tanker",
+  ]
+
+roboflow:
+  workspace: object-detection-efq50
+  project: open-fs8xe
+  version: 4
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/object-detection-efq50/open-fs8xe/dataset/4
