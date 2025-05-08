@@ -1,7 +1,7 @@
 from ultralytics import YOLO
 
 # val seaship 
-model = YOLO('best.pt')
+model = YOLO('best-seaship.pt')
 
 model.val(data='seaship.yaml', batch=1)
 
