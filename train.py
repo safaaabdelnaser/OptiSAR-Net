@@ -4,7 +4,7 @@ from ultralytics import YOLO
 
 model = YOLO("OptiSAR-Net.yaml")
 
-model.train(data="seaship.yaml", epochs=100, imgsz=416,plots=True ,val=True ,save=True, batch=8, close_mosaic=0)
+model.train(data="seaship.yaml", epochs=50, imgsz=416,plots=True ,val=True ,save=True, batch=8, close_mosaic=0)
 
 # # opensar dataset
 # model = YOLO('OptiSAR-Net.yaml').load('last.pt')
