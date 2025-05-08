@@ -1,7 +1,7 @@
 from ultralytics import YOLO
 
 # val seaship 
-model = YOLO('/kaggle/working/seashipDataset-2/runs/detect/train/weights/best.pt')
+model = YOLO('/kaggle/working/OptiSAR-Net/runs/detect/train/weights/best.pt')
 
 model.val(data='seaship.yaml', batch=1)
 
