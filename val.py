@@ -6,5 +6,5 @@ from ultralytics import YOLO
 # model.val(data='seaship.yaml', batch=1)
 
 # val opensar dataset
-model = YOLO('/kaggle/working/ShipRSI-1/runs/detect/train/weights/best.pt')
-model.val(data='opensar.yaml', batch=8)
+model = YOLO('best_shipRSI.pt')
+model.val(data='shipRIS.yaml', batch=8)
