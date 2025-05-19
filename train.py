@@ -17,4 +17,4 @@ model = YOLO("OptiSAR-Net.yaml")
 
 #train
 model = YOLO('OptiSAR-Net.yaml').load('last_shipRSI.pt')
-model.train(data="shipRIS.yaml", epochs=2 ,imgsz=416 ,plots=True ,val=True ,save=True, batch=8, close_mosaic=0)
+model.train(data="shipRIS.yaml", epochs=5 ,imgsz=416 ,plots=True ,val=True ,save=True, batch=8, close_mosaic=0)
