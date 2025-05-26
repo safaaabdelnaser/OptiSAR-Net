@@ -15,6 +15,8 @@ import torch.distributed as dist
 import torch.nn as nn
 import torch.nn.functional as F
 import torchvision
+from ultralytics.nn.tasks import DetectionModel
+import torch.serialization
 
 from ultralytics.utils import DEFAULT_CFG_DICT, DEFAULT_CFG_KEYS, LOGGER, __version__
 from ultralytics.utils.checks import PYTHON_VERSION, check_version
@@ -484,8 +486,8 @@ def strip_optimizer(f: Union[str, Path] = "best.pt", s: str = "") -> None:
         ```
     """
     # x = torch.load(f, map_location=torch.device("cpu"))
-    with torch.serialization.safe_globals(["ultralytics.nn.tasks.DetectionModel"]):
-        x = torch.load(f, map_location=torch.device("cpu"))
+    with torch.serialization.safe_globals([DetectionModel]):
+         x = torch.load(f, map_location=torch.device("cpu"))
 
     if "model" not in x:
         LOGGER.info(f"Skipping {f}, not a valid Ultralytics model.")
