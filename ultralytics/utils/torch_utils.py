@@ -484,10 +484,6 @@ def strip_optimizer(f: Union[str, Path] = "best.pt", s: str = "") -> None:
         ```
     """
     x = torch.load(f, map_location=torch.device("cpu"))
-    # import torch.serialization
-    # torch.serialization.add_safe_globals([ultralytics.nn.tasks.DetectionModel])
-    # x = torch.load(f, map_location=torch.device("cpu"), weights_only=False)
-
     if "model" not in x:
         LOGGER.info(f"Skipping {f}, not a valid Ultralytics model.")
         return
