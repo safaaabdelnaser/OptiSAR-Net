@@ -12,7 +12,7 @@ model = YOLO("optiSar-Net-p2.yaml")
 # model.train(data="opensar.yaml", epochs=25 ,imgsz=416 ,plots=True ,val=True ,save=True, batch=8, close_mosaic=0)
 
 # train of shipRIS
-model.train(data="shipRIS.yaml", epochs=10, imgsz=416,plots=True ,val=True ,save=True, batch=8, close_mosaic=0)
+model.train(data="shipRIS.yaml", epochs=100, imgsz=416,plots=True ,val=True ,save=True, batch=8, close_mosaic=0)
 
 
 #train
