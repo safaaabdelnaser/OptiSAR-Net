@@ -17,7 +17,8 @@ model.train(
     box=7.5,
     cls=0.5,
     dfl=1.5,
-    obj=1.5,
+    kobj=1.5,
+
     mosaic=0.5,
     close_mosaic=10,
     multi_scale=True,
