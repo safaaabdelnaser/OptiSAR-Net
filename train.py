@@ -33,18 +33,26 @@ model = YOLO("optiSar-Net-p2.yaml")
 # )
 model.train(
     data="seaship.yaml",
-    epochs=150,
-    imgsz=1024,
+    epochs=50,
+    imgsz=416,
     batch=8,
+
     optimizer="Adamax",
     lr0=3e-4,
     lrf=0.01,
+
     fl_gamma=2.5,
-    plots=True,
-    val=True,
+
     cos_lr=True,
     warmup_epochs=5,
-    patience=100
+
+    mosaic=0.7,
+    close_mosaic=10,
+    multi_scale=True,
+
+    plots=True,
+    val=True,
+    save=True
 )
 
 # # opensar dataset
