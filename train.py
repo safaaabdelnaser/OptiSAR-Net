@@ -41,8 +41,6 @@ model.train(
     lr0=3e-4,
     lrf=0.01,
 
-    fl_gamma=2.5,
-
     cos_lr=True,
     warmup_epochs=5,
 
