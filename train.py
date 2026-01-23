@@ -33,7 +33,7 @@ model = YOLO("optiSar-Net-p2.yaml")
 # )
 model.train(
     data="seaship.yaml",
-    epochs=50,
+    epochs=300,
     imgsz=416,
     batch=8,
 
